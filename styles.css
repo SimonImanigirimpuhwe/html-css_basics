@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: white;
+}
+
+.site {
+    display: grid;
+    grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+    grid-template-rows: minmax(0.5em, auto) 1fr 1fr minmax(1em, auto);
+    min-height: 100vh;
+    gap: 10px;
+    width: 100%;
+}
+footer {
+    background-color: blue;
+    padding: 10px;
+}
+
+.head{
+    background-color: rgb(75, 86, 236);
+    padding: 10px;
+}
+
+.head,
+footer {
+    grid-column: span 8;
+}
+.main-content{
+    grid-column: 2/6;
+    background-color: yellowgreen;
+}
+.sidebar{
+    grid-column: 6/8;
+    background-color: purple;
+
+}
+.twin{
+    grid-column: 2/5;
+    grid-row: 3/4;
+    background-color: orange;
+}
+.twin:last-of-type{
+    grid-column: 5/8;
+    background-color:red;
+}
+
+
+
